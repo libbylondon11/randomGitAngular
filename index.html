@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="gifApp">
+  <head>
+    <meta charset="utf-8">
+    <title> Random Gif Generator Angular </title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    <button ng-click="buttonClick()"> get some Gifs! </button>
+  <div ng-show="theButtonClicked">
+    <img ng-src="{{gif.data.image_original_url}}" />
+
+  </div>
+ </body>
+</html>
